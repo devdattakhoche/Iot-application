@@ -1,0 +1,6 @@
+Montrose Beach,17.8,0.3,3.0,0.105
+Osterman Beach,17.6,2.12,3.0,0.09
+Ohio Street Beach,22.1,1.24,4.0,0.073
+Rainbow Beach,19.8,0.71,-100000.0,-99999.992
+Calumet Beach,22.1,1.56,6.0,0.066
+63rd Street Beach,20.0,0.64,3.0,0.1
