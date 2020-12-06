@@ -1,702 +1,687 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Requi#ee9090 meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Requi#ee9090 meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      body {
+        background-color: #d0d0d0;
+      }
+      h1,h2 {
+        /* font-weight: 200; */
+      }
+    </style>
+    <title>Home Page</title>
+  </head>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <title>Home Page</title>
-</head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="#">Beach Water Quality</a>
+      </div>
+    </nav>
 
-<body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"></a>
-        </li>
-      </ul>
-    </div>
-    <div class="mx-auto order-0">
-      <a class="navbar-brand mx-auto" href="#">Beach Water Quality</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="m-5">
+      <!-- ------------------------------Beach 1------------------------------------------- -->
+      <div>
+        <h1 id="beach-name-1" class="text-center my-5 text-primary"></h1>
+        <div class="card text-center">
+          <div class="bard-body">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Parameters</th>
+                  <th scope="col">Value</th>
+                  <th scope="col">Condition</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Temperature</td>
+                  <td id="beach-temp-1">28 C</td>
+                  <td id="temp-cond-1">Water Teamperature too high</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Turbidity</td>
+                  <td id="beach-turb-1">5.0</td>
+                  <td id="turb-cond-1">Water Turbidity too low</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Wave Height</td>
+                  <td id="beach-height-1">5.0</td>
+                  <td id="height-cond-1">Water Height too low</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Wave Period</td>
+                  <td id="beach-period-1">5.0</td>
+                  <td id="period-cond-1">Water Period too low</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 id="beach-1-safety">Beach is safe</h2>
+          </div>
+        </div>
+      </div>
 
-  </nav>
-  <!-- ------------------------------Beach 1------------------------------------------- -->
-  <div>
-    <h1 id='beach-name-1' class="text-center my-5 text-primary"></h1>
-    <div class="card text-center">
-      <div class="bard-body">
-        <table class="table">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Parameters</th>
-              <th scope="col">Value</th>
-              <th scope="col">Condition</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Temperature</td>
-              <td id="beach-temp-1">28 C</td>
-              <td id="temp-cond-1">Water Teamperature too high</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Turbidity</td>
-              <td id="beach-turb-1">5.0</td>
-              <td id="turb-cond-1">Water Turbidity too low</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Wave Height</td>
-              <td id="beach-height-1">5.0</td>
-              <td id="height-cond-1">Water Height too low</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Wave Period</td>
-              <td id="beach-period-1">5.0</td>
-              <td id="period-cond-1">Water Period too low</td>
-            </tr>
-          </tbody>
-        </table>
-        <h2 id="beach-1-safety">Beach is safe</h2>
+      <!-- --------------------------------Beach 2--------------------------------------------- -->
+      <div>
+        <h1 id="beach-name-2" class="text-center my-5 text-primary"></h1>
+        <div class="card text-center">
+          <div class="bard-body">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Parameters</th>
+                  <th scope="col">Value</th>
+                  <th scope="col">Condition</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Temperature</td>
+                  <td id="beach-temp-2">28 C</td>
+                  <td id="temp-cond-2">Water Teamperature too high</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Turbidity</td>
+                  <td id="beach-turb-2">5.0</td>
+                  <td id="turb-cond-2">Water Turbidity too low</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Wave Height</td>
+                  <td id="beach-height-2">5.0</td>
+                  <td id="height-cond-2">Water Height too low</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Wave Period</td>
+                  <td id="beach-period-2">5.0</td>
+                  <td id="period-cond-2">Water Height too low</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 id="beach-2-safety">Beach is safe</h2>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------Beach 3--------------------------------------------- -->
+      <div>
+        <h1 id="beach-name-3" class="text-center my-5 text-primary"></h1>
+        <div class="card text-center">
+          <div class="bard-body">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Parameters</th>
+                  <th scope="col">Value</th>
+                  <th scope="col">Condition</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Temperature</td>
+                  <td id="beach-temp-3">28 C</td>
+                  <td id="temp-cond-3">Water Teamperature too high</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Turbidity</td>
+                  <td id="beach-turb-3">5.0</td>
+                  <td id="turb-cond-3">Water Turbidity too low</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Wave Height</td>
+                  <td id="beach-height-3">5.0</td>
+                  <td id="height-cond-3">Water Height too low</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Wave Period</td>
+                  <td id="beach-period-3">5.0</td>
+                  <td id="period-cond-3">Water Height too low</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 id="beach-3-safety">Beach is safe</h2>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------Beach 4--------------------------------------------- -->
+      <div>
+        <h1 id="beach-name-4" class="text-center my-5 text-primary"></h1>
+        <div class="card text-center">
+          <div class="bard-body">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Parameters</th>
+                  <th scope="col">Value</th>
+                  <th scope="col">Condition</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Temperature</td>
+                  <td id="beach-temp-4">28 C</td>
+                  <td id="temp-cond-4">Water Teamperature too high</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Turbidity</td>
+                  <td id="beach-turb-4">5.0</td>
+                  <td id="turb-cond-4">Water Turbidity too low</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Wave Height</td>
+                  <td id="beach-height-4">5.0</td>
+                  <td id="height-cond-4">Water Height too low</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Wave Period</td>
+                  <td id="beach-period-4">5.0</td>
+                  <td id="period-cond-4">Water Height too low</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 id="beach-4-safety">Beach is safe</h2>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------Beach 5--------------------------------------------- -->
+      <div>
+        <h1 id="beach-name-5" class="text-center my-5 text-primary"></h1>
+        <div class="card text-center">
+          <div class="bard-body">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Parameters</th>
+                  <th scope="col">Value</th>
+                  <th scope="col">Condition</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Temperature</td>
+                  <td id="temp-cond-5 beach-temp-5">28 C</td>
+                  <td id="temp-cond-5">Water Teamperature too high</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Turbidity</td>
+                  <td id="beach-turb-5">5.0</td>
+                  <td id="turb-cond-5">Water Turbidity too low</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Wave Height</td>
+                  <td id="beach-height-5">5.0</td>
+                  <td id="height-cond-5">Water Height too low</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Wave Period</td>
+                  <td id="beach-period-5">5.0</td>
+                  <td id="period-cond-5">Water Height too low</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 id="beach-5-safety">Beach is safe</h2>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------Beach 6--------------------------------------------- -->
+      <div>
+        <h1 id="beach-name-6" class="text-center my-5 text-primary" my-2></h1>
+        <div class="card text-center">
+          <div class="bard-body">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Parameters</th>
+                  <th scope="col">Value</th>
+                  <th scope="col">Condition</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Temperature</td>
+                  <td id="beach-temp-6">28 C</td>
+                  <td id="temp-cond-6">Water Teamperature too high</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Turbidity</td>
+                  <td id="beach-turb-6">5.0</td>
+                  <td id="turb-cond-6">Water Turbidity too low</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Wave Height</td>
+                  <td id="beach-height-6">5.0</td>
+                  <td id="height-cond-6">Water Height too low</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Wave Period</td>
+                  <td id="beach-period-6">5.0</td>
+                  <td id="period-cond-6">Water Height too low</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 id="beach-6-safety">Beach is safe</h2>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-
-  <!-- --------------------------------Beach 2--------------------------------------------- -->
-  <div>
-    <h1 id='beach-name-2' class="text-center my-5 text-primary"></h1>
-    <div class="card text-center">
-      <div class="bard-body">
-        <table class="table">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Parameters</th>
-              <th scope="col">Value</th>
-              <th scope="col">Condition</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Temperature</td>
-              <td id="beach-temp-2">28 C</td>
-              <td id="temp-cond-2">Water Teamperature too high</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Turbidity</td>
-              <td id="beach-turb-2">5.0</td>
-              <td id="turb-cond-2">Water Turbidity too low</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Wave Height</td>
-              <td id="beach-height-2">5.0</td>
-              <td id="height-cond-2">Water Height too low</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Wave Period</td>
-              <td id="beach-period-2">5.0</td>
-              <td id="period-cond-2">Water Height too low</td>
-            </tr>
-          </tbody>
-        </table>
-        <h2 id="beach-2-safety">Beach is safe</h2>
-      </div>
-    </div>
-  </div>
-  <!-- --------------------------------Beach 3--------------------------------------------- -->
-  <div>
-    <h1 id='beach-name-3' class="text-center my-5 text-primary"></h1>
-    <div class="card text-center">
-      <div class="bard-body">
-        <table class="table">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Parameters</th>
-              <th scope="col">Value</th>
-              <th scope="col">Condition</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Temperature</td>
-              <td id="beach-temp-3">28 C</td>
-              <td id="temp-cond-3">Water Teamperature too high</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Turbidity</td>
-              <td id="beach-turb-3">5.0</td>
-              <td id="turb-cond-3">Water Turbidity too low</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Wave Height</td>
-              <td id="beach-height-3">5.0</td>
-              <td id="height-cond-3">Water Height too low</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Wave Period</td>
-              <td id="beach-period-3">5.0</td>
-              <td id="period-cond-3">Water Height too low</td>
-            </tr>
-          </tbody>
-        </table>
-        <h2 id="beach-3-safety">Beach is safe</h2>
-      </div>
-    </div>
-  </div>
-  <!-- --------------------------------Beach 4--------------------------------------------- -->
-  <div>
-    <h1 id='beach-name-4' class="text-center my-5 text-primary"></h1>
-    <div class="card text-center">
-      <div class="bard-body">
-        <table class="table">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Parameters</th>
-              <th scope="col">Value</th>
-              <th scope="col">Condition</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Temperature</td>
-              <td id="beach-temp-4">28 C</td>
-              <td id="temp-cond-4">Water Teamperature too high</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Turbidity</td>
-              <td id="beach-turb-4">5.0</td>
-              <td id="turb-cond-4">Water Turbidity too low</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Wave Height</td>
-              <td id="beach-height-4">5.0</td>
-              <td id="height-cond-4">Water Height too low</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Wave Period</td>
-              <td id="beach-period-4">5.0</td>
-              <td id="period-cond-4">Water Height too low</td>
-            </tr>
-          </tbody>
-        </table>
-        <h2 id="beach-4-safety">Beach is safe</h2>
-      </div>
-    </div>
-  </div>
-  <!-- --------------------------------Beach 5--------------------------------------------- -->
-  <div>
-    <h1 id='beach-name-5' class="text-center my-5 text-primary"></h1>
-    <div class="card text-center">
-      <div class="bard-body">
-        <table class="table">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Parameters</th>
-              <th scope="col">Value</th>
-              <th scope="col">Condition</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Temperature</td>
-              <td id="beach-temp-5">28 C</td>
-              <td id="temp-cond-5">Water Teamperature too high</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Turbidity</td>
-              <td id="beach-turb-5">5.0</td>
-              <td id="turb-cond-5">Water Turbidity too low</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Wave Height</td>
-              <td id="beach-height-5">5.0</td>
-              <td id="height-cond-5">Water Height too low</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Wave Period</td>
-              <td id="beach-period-5">5.0</td>
-              <td id="period-cond-5">Water Height too low</td>
-            </tr>
-          </tbody>
-        </table>
-        <h2 id="beach-5-safety">Beach is safe</h2>
-      </div>
-    </div>
-  </div>
-  <!-- --------------------------------Beach 6--------------------------------------------- -->
-  <div>
-    <h1 id='beach-name-6' class="text-center my-5 text-primary" my-2></h1>
-    <div class="card text-center">
-      <div class="bard-body">
-        <table class="table">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Parameters</th>
-              <th scope="col">Value</th>
-              <th scope="col">Condition</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Temperature</td>
-              <td id="beach-temp-6">28 C</td>
-              <td id="temp-cond-6">Water Teamperature too high</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Turbidity</td>
-              <td id="beach-turb-6">5.0</td>
-              <td id="turb-cond-6">Water Turbidity too low</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Wave Height</td>
-              <td id="beach-height-6">5.0</td>
-              <td id="height-cond-6">Water Height too low</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Wave Period</td>
-              <td id="beach-period-6">5.0</td>
-              <td id="period-cond-6">Water Height too low</td>
-            </tr>
-          </tbody>
-        </table>
-        <h2 id="beach-6-safety">Beach is safe</h2>
-      </div>
-    </div>
-  </div>
-  <!-- -----------------------------------------End------------------------------------------ -->
-  <script>
-    $.get("http://localhost:5000/getData", function (data, status) {
-      console.log(data);
-      $("#beach-name-1").text(data["Calumet Beach"][0]);
-      $("#beach-name-2").text(data["Rainbow Beach"][0]);
-      $("#beach-name-3").text(data["Montrose Beach"][0]);
-      $("#beach-name-4").text(data["Ohio Street Beach"][0]);
-      $("#beach-name-5").text(data["63rd Street Beach"][0]);
-      $("#beach-name-6").text(data["Osterman Beach"][0]);
-    });
-    setInterval(function () {
+    <!-- -----------------------------------------End------------------------------------------ -->
+    <script>
       $.get("http://localhost:5000/getData", function (data, status) {
         console.log(data);
-
-        // <!-- --------------------------------Beach 1--------------------------------------------- -->
-        var list = data["Calumet Beach"]
-        var beach1 = 0
-        if (list[1] >= 21) {
-          $("#temp-cond-1").text("Water Teamperature too high");
-          $("#temp-cond-1").css("background-color", "#ee9090")
-          beach1 = beach1 + 1
-        }
-        else {
-          $("#temp-cond-1").text("Water Teamperature is Optimal");
-          $("#temp-cond-1").css("background-color", "#90ee90")
-        }
-        if (list[2] >= 1.2) {
-          $("#turb-cond-1").text("Water is too dirty");
-          $("#turb-cond-1").css("background-color", "#ee9090")
-          beach1 = beach1 + 1
-        }
-        else {
-          $("#turb-cond-1").text("Water is clean");
-          $("#turb-cond-1").css("background-color", "#90ee90")
-        }
-        if (list[4] >= 4) {
-          $("#height-cond-1").text("Wave Height too high");
-          $("#height-cond-1").css("background-color", "#ee9090")
-          beach1 = beach1 + 1
-        }
-        else {
-          $("#height-cond-1").text("Wave Height is Optimal");
-          $("#height-cond-1").css("background-color", "#90ee90")
-        }
-        if (list[3] >= 0.08) {
-          $("#period-cond-1").text("Waves are too frequent");
-          $("#period-cond-1").css("background-color", "#ee9090")
-          beach1 = beach1 + 1
-        }
-        else {
-          $("#period-cond-1").text("Waves are Optimal");
-          $("#period-cond-1").css("background-color", "#90ee90")
-        }
-
-        $("#beach-temp-1").text(data["Calumet Beach"][1]);
-        $("#beach-turb-1").text(data["Calumet Beach"][2]);
-        $("#beach-height-1").text(data["Calumet Beach"][4]);
-        $("#beach-period-1").text(data["Calumet Beach"][3]);
-
-        if (beach1 === 0) {
-          $("#beach-1-safety").text("Beach is safe for you and your family to enjoy");
-        }
-        else if (beach1 === 1) {
-          $("#beach-1-safety").text("Beach is kind of safe for you and your family to enjoy");
-        }
-        else if (beach1 === 2) {
-          $("#beach-1-safety").text("You may choose to visit the beach at your own descretion");
-        }
-        else if (beach1 === 3) {
-          $("#beach-1-safety").text("We recommend, not to visit the beach");
-        }
-        else if (beach1 === 4) {
-          $("#beach-1-safety").text("Beach conditions are dangerous");
-        }
-
-
-        // <!-- --------------------------------Beach 2--------------------------------------------- -->
-
-        var list = data["Rainbow Beach"]
-        var beach2 = 0
-        if (list[1] >= 21) {
-          $("#temp-cond-2").text("Water Teamperature too high");
-          $("#temp-cond-2").css("background-color", "#ee9090")
-          beach2 = beach2 + 1
-        }
-        else {
-          $("#temp-cond-2").text("Water Teamperature is Optimal");
-          $("#temp-cond-2").css("background-color", "#90ee90")
-        }
-        if (list[2] >= 1.2) {
-          $("#turb-cond-2").text("Water is too dirty");
-          $("#turb-cond-2").css("background-color", "#ee9090")
-          beach2 = beach2 + 1
-        }
-        else {
-          $("#turb-cond-2").text("Water is clean");
-          $("#turb-cond-2").css("background-color", "#90ee90")
-        }
-        if (list[4] >= 4) {
-          $("#height-cond-2").text("Wave Height too high");
-          $("#height-cond-2").css("background-color", "#ee9090")
-          beach2 = beach2 + 1
-        }
-        else {
-          $("#height-cond-2").text("Wave Height is Optimal");
-          $("#height-cond-2").css("background-color", "#90ee90")
-        }
-        if (list[3] >= 0.08) {
-          $("#period-cond-2").text("Wavea are too frequent");
-          $("#period-cond-2").css("background-color", "#ee9090")
-          beach2 = beach2 + 1
-        }
-        else {
-          $("#period-cond-2").text("Waves are Optimal");
-          $("#period-cond-2").css("background-color", "#90ee90")
-        }
-
-        $("#beach-temp-2").text(data["Rainbow Beach"][1]);
-        $("#beach-turb-2").text(data["Rainbow Beach"][2]);
-        $("#beach-height-2").text(data["Rainbow Beach"][4]);
-        $("#beach-period-2").text(data["Rainbow Beach"][3]);
-
-        if (beach2 === 0) {
-          $("#beach-2-safety").text("Beach is safe for you and your family to enjoy");
-        }
-        else if (beach2 === 1) {
-          $("#beach-2-safety").text("Beach is kind of safe for you and your family to enjoy");
-        }
-        else if (beach2 === 2) {
-          $("#beach-2-safety").text("You may choose to visit the beach at your own descretion");
-        }
-        else if (beach2 === 3) {
-          $("#beach-2-safety").text("We recommend, not to visit the beach");
-        }
-        else if (beach2 === 4) {
-          $("#beach-2-safety").text("Beach conditions are dangerous");
-        }
-
-        // <!-- --------------------------------Beach 3--------------------------------------------- -->
-
-        var list = data["Montrose Beach"]
-        var beach3 = 0
-        if (list[1] >= 21) {
-          $("#temp-cond-3").text("Water Teamperature too high");
-          $("#temp-cond-3").css("background-color", "#ee9090")
-          beach3 = beach3 + 1
-        }
-        else {
-          $("#temp-cond-3").text("Water Teamperature is Optimal");
-          $("#temp-cond-3").css("background-color", "#90ee90")
-        }
-        if (list[2] >= 1.2) {
-          $("#turb-cond-3").text("Water is too dirty");
-          $("#turb-cond-3").css("background-color", "#ee9090")
-          beach3 = beach3 + 1
-        }
-        else {
-          $("#turb-cond-3").text("Water is clean");
-          $("#turb-cond-3").css("background-color", "#90ee90")
-        }
-        if (list[4] >= 4) {
-          $("#height-cond-3").text("Wave Height too high");
-          $("#height-cond-3").css("background-color", "#ee9090")
-          beach3 = beach3 + 1
-        }
-        else {
-          $("#height-cond-3").text("Wave Height is Optimal");
-          $("#height-cond-3").css("background-color", "#90ee90")
-        }
-        if (list[3] >= 0.08) {
-          $("#period-cond-3").text("Wavea are too frequent");
-          $("#period-cond-3").css("background-color", "#ee9090")
-          beach3 = beach3 + 1
-        }
-        else {
-          $("#period-cond-3").text("Waves are Optimal");
-          $("#period-cond-3").css("background-color", "#90ee90")
-        }
-
-        $("#beach-temp-3").text(data["Montrose Beach"][1]);
-        $("#beach-turb-3").text(data["Montrose Beach"][2]);
-        $("#beach-height-3").text(data["Montrose Beach"][4]);
-        $("#beach-period-3").text(data["Montrose Beach"][3]);
-
-        if (beach3 === 0) {
-          $("#beach-3-safety").text("Beach is safe for you and your family to enjoy");
-        }
-        else if (beach3 === 1) {
-          $("#beach-3-safety").text("Beach is kind of safe for you and your family to enjoy");
-        }
-        else if (beach3 === 2) {
-          $("#beach-3-safety").text("You may choose to visit the beach at your own descretion");
-        }
-        else if (beach3 === 3) {
-          $("#beach-3-safety").text("We recommend, not to visit the beach");
-        }
-        else if (beach3 === 4) {
-          $("#beach-3-safety").text("Beach conditions are dangerous");
-        }
-
-        // <!-- --------------------------------Beach 4--------------------------------------------- -->
-
-        var list = data["Ohio Street Beach"]
-        var beach4 = 0
-        if (list[1] >= 21) {
-          $("#temp-cond-4").text("Water Teamperature too high")
-          $("#temp-cond-4").css("background-color", "#ee9090")
-          beach4 = beach4 + 1
-        }
-        else {
-          $("#temp-cond-4").text("Water Teamperature is Optimal");
-          $("#temp-cond-4").css("background-color", "#90ee90")
-        }
-        if (list[2] >= 1.2) {
-          $("#turb-cond-4").text("Water is too dirty");
-          $("#turb-cond-4").css("background-color", "#ee9090")
-          beach4 = beach4 + 1
-        }
-        else {
-          $("#turb-cond-4").text("Water is clean");
-          $("#turb-cond-4").css("background-color", "#90ee90")
-        }
-        if (list[4] >= 4) {
-          $("#height-cond-4").text("Wave Height too high");
-          $("#height-cond-4").css("background-color", "#ee9090")
-          beach4 = beach4 + 1
-        }
-        else {
-          $("#height-cond-4").text("Wave Height is Optimal");
-          $("#height-cond-4").css("background-color", "#90ee90")
-        }
-        if (list[3] >= 0.08) {
-          $("#period-cond-4").text("Wavea are too frequent");
-          $("#period-cond-4").css("background-color", "#ee9090")
-          beach4 = beach4 + 1
-        }
-        else {
-          $("#period-cond-4").text("Waves are Optimal");
-          $("#period-cond-4").css("background-color", "#90ee90")
-        }
-
-        $("#beach-temp-4").text(data["Ohio Street Beach"][1]);
-        $("#beach-turb-4").text(data["Ohio Street Beach"][2]);
-        $("#beach-height-4").text(data["Ohio Street Beach"][4]);
-        $("#beach-period-4").text(data["Ohio Street Beach"][3]);
-
-        if (beach4 === 0) {
-          $("#beach-4-safety").text("Beach is safe for you and your family to enjoy");
-        }
-        else if (beach4 === 1) {
-          $("#beach-4-safety").text("Beach is kind of safe for you and your family to enjoy");
-        }
-        else if (beach4 === 2) {
-          $("#beach-4-safety").text("You may choose to visit the beach at your own descretion");
-        }
-        else if (beach4 === 3) {
-          $("#beach-4-safety").text("We recommend, not to visit the beach");
-        }
-        else if (beach4 === 4) {
-          $("#beach-4-safety").text("Beach conditions are dangerous");
-        }
-
-        // <!-- --------------------------------Beach 5--------------------------------------------- -->
-
-        var list = data["63rd Street Beach"]
-        var beach5 = 0
-        if (list[1] >= 21) {
-          $("#temp-cond-5").text("Water Teamperature too high");
-          $("#temp-cond-5").css("background-color", "#ee9090")
-          beach5 = beach5 + 1
-        }
-        else {
-          $("#temp-cond-5").text("Water Teamperature is Optimal");
-          $("#temp-cond-5").css("background-color", "#90ee90")
-        }
-        if (list[2] >= 1.2) {
-          $("#turb-cond-5").text("Water is too dirty");
-          $("#turb-cond-5").css("background-color", "#ee9090")
-          beach5 = beach5 + 1
-        }
-        else {
-          $("#turb-cond-5").text("Water is clean");
-          $("#turb-cond-5").css("background-color", "#90ee90")
-        }
-        if (list[4] >= 4) {
-          $("#height-cond-5").text("Wave Height too high");
-          $("#height-cond-5").css("background-color", "#ee9090")
-          beach5 = beach5 + 1
-        }
-        else {
-          $("#height-cond-5").text("Wave Height is Optimal");
-          $("#height-cond-5").css("background-color", "#90ee90")
-        }
-        if (list[3] >= 0.08) {
-          $("#period-cond-5").text("Wavea are too frequent");
-          $("#period-cond-5").css("background-color", "#ee9090")
-          beach5 = beach5 + 1
-        }
-        else {
-          $("#period-cond-5").text("Waves are Optimal");
-          $("#period-cond-5").css("background-color", "#90ee90")
-        }
-
-        $("#beach-temp-5").text(data["63rd Street Beach"][1]);
-        $("#beach-turb-5").text(data["63rd Street Beach"][2]);
-        $("#beach-height-5").text(data["63rd Street Beach"][4]);
-        $("#beach-period-5").text(data["63rd Street Beach"][3]);
-
-        if (beach5 === 0) {
-          $("#beach-5-safety").text("Beach is safe for you and your family to enjoy");
-        }
-        else if (beach5 === 1) {
-          $("#beach-5-safety").text("Beach is kind of safe for you and your family to enjoy");
-        }
-        else if (beach5 === 2) {
-          $("#beach-5-safety").text("You may choose to visit the beach at your own descretion");
-        }
-        else if (beach5 === 3) {
-          $("#beach-5-safety").text("We recommend, not to visit the beach");
-        }
-        else if (beach5 === 4) {
-          $("#beach-5-safety").text("Beach conditions are dangerous");
-        }
-
-        // <!-- --------------------------------Beach 6--------------------------------------------- -->
-
-        var list = data["Osterman Beach"]
-        var beach6 = 0
-        if (list[1] >= 21) {
-          $("#temp-cond-6").text("Water Teamperature too high");
-          $("#temp-cond-6").css("background-color", "#ee9090")
-          beach6 = beach6 + 1
-        }
-        else {
-          $("#temp-cond-6").text("Water Teamperature is Optimal");
-          $("#temp-cond-6").css("background-color", "#90ee90")
-        }
-        if (list[2] >= 1.2) {
-          $("#turb-cond-6").text("Water is too dirty");
-          $("#turb-cond-6").css("background-color", "#ee9090")
-          beach6 = beach6 + 1
-        }
-        else {
-          $("#turb-cond-6").text("Water is clean");
-          $("#turb-cond-6").css("background-color", "#90ee90")
-        }
-        if (list[4] >= 4) {
-          $("#height-cond-6").text("Wave Height too high");
-          $("#height-cond-6").css("background-color", "#ee9090")
-          beach6 = beach6 + 1
-        }
-        else {
-          $("#height-cond-6").text("Wave Height is Optimal");
-          $("#height-cond-6").css("background-color", "#90ee90")
-        }
-        if (list[3] >= 0.08) {
-          $("#period-cond-6").text("Wavea are too frequent");
-          $("#period-cond-6").css("background-color", "#ee9090")
-          beach6 = beach6 + 1
-        }
-        else {
-          $("#period-cond-6").text("Waves are Optimal");
-          $("#period-cond-6").css("background-color", "#90ee90")
-        }
-
-        $("#beach-temp-6").text(data["Osterman Beach"][1]);
-        $("#beach-turb-6").text(data["Osterman Beach"][2]);
-        $("#beach-height-6").text(data["Osterman Beach"][4]);
-        $("#beach-period-6").text(data["Osterman Beach"][3]);
-
-        if (beach6 === 0) {
-          $("#beach-6-safety").text("Beach is safe for you and your family to enjoy");
-        }
-        else if (beach6 === 1) {
-          $("#beach-6-safety").text("Beach is kind of safe for you and your family to enjoy");
-        }
-        else if (beach6 === 2) {
-          $("#beach-6-safety").text("You may choose to visit the beach at your own descretion");
-        }
-        else if (beach6 === 3) {
-          $("#beach-6-safety").text("We recommend, not to visit the beach");
-        }
-        else if (beach6 === 4) {
-          $("#beach-6-safety").text("Beach conditions are dangerous");
-        }
+        $("#beach-name-1").text(data["Calumet Beach"][0]);
+        $("#beach-name-2").text(data["Rainbow Beach"][0]);
+        $("#beach-name-3").text(data["Montrose Beach"][0]);
+        $("#beach-name-4").text(data["Ohio Street Beach"][0]);
+        $("#beach-name-5").text(data["63rd Street Beach"][0]);
+        $("#beach-name-6").text(data["Osterman Beach"][0]);
       });
-    }, 2000);
-  </script>
-</body>
+      setInterval(function () {
+        $.get("http://localhost:5000/getData", function (data, status) {
+          console.log(data);
 
+          // <!-- --------------------------------Beach 1--------------------------------------------- -->
+          var list = data["Calumet Beach"];
+          var beach1 = 0;
+          if (list[1] >= 21) {
+            $("#temp-cond-1").text("Water Teamperature too high");
+            $("#temp-cond-1").css("background-color", "#ee9090");
+            beach1 = beach1 + 1;
+          } else {
+            $("#temp-cond-1").text("Water Teamperature is Optimal");
+            $("#temp-cond-1").css("background-color", "#90ee90");
+          }
+          if (list[2] >= 1.2) {
+            $("#turb-cond-1").text("Water is too dirty");
+            $("#turb-cond-1").css("background-color", "#ee9090");
+            beach1 = beach1 + 1;
+          } else {
+            $("#turb-cond-1").text("Water is clean");
+            $("#turb-cond-1").css("background-color", "#90ee90");
+          }
+          if (list[4] >= 4) {
+            $("#height-cond-1").text("Wave Height too high");
+            $("#height-cond-1").css("background-color", "#ee9090");
+            beach1 = beach1 + 1;
+          } else {
+            $("#height-cond-1").text("Wave Height is Optimal");
+            $("#height-cond-1").css("background-color", "#90ee90");
+          }
+          if (list[3] >= 0.08) {
+            $("#period-cond-1").text("Waves are too frequent");
+            $("#period-cond-1").css("background-color", "#ee9090");
+            beach1 = beach1 + 1;
+          } else {
+            $("#period-cond-1").text("Waves are Optimal");
+            $("#period-cond-1").css("background-color", "#90ee90");
+          }
+
+          $("#beach-temp-1").text(data["Calumet Beach"][1]);
+          $("#beach-turb-1").text(data["Calumet Beach"][2]);
+          $("#beach-height-1").text(data["Calumet Beach"][4]);
+          $("#beach-period-1").text(data["Calumet Beach"][3]);
+
+          if (beach1 === 0) {
+            $("#beach-1-safety").text(
+              "Beach is safe for you and your family to enjoy"
+            );
+          } else if (beach1 === 1) {
+            $("#beach-1-safety").text(
+              "Beach is kind of safe for you and your family to enjoy"
+            );
+          } else if (beach1 === 2) {
+            $("#beach-1-safety").text(
+              "You may choose to visit the beach at your own descretion"
+            );
+          } else if (beach1 === 3) {
+            $("#beach-1-safety").text("We recommend, not to visit the beach");
+          } else if (beach1 === 4) {
+            $("#beach-1-safety").text("Beach conditions are dangerous");
+          }
+
+          // <!-- --------------------------------Beach 2--------------------------------------------- -->
+
+          var list = data["Rainbow Beach"];
+          var beach2 = 0;
+          if (list[1] >= 21) {
+            $("#temp-cond-2").text("Water Teamperature too high");
+            $("#temp-cond-2").css("background-color", "#ee9090");
+            beach2 = beach2 + 1;
+          } else {
+            $("#temp-cond-2").text("Water Teamperature is Optimal");
+            $("#temp-cond-2").css("background-color", "#90ee90");
+          }
+          if (list[2] >= 1.2) {
+            $("#turb-cond-2").text("Water is too dirty");
+            $("#turb-cond-2").css("background-color", "#ee9090");
+            beach2 = beach2 + 1;
+          } else {
+            $("#turb-cond-2").text("Water is clean");
+            $("#turb-cond-2").css("background-color", "#90ee90");
+          }
+          if (list[4] >= 4) {
+            $("#height-cond-2").text("Wave Height too high");
+            $("#height-cond-2").css("background-color", "#ee9090");
+            beach2 = beach2 + 1;
+          } else {
+            $("#height-cond-2").text("Wave Height is Optimal");
+            $("#height-cond-2").css("background-color", "#90ee90");
+          }
+          if (list[3] >= 0.08) {
+            $("#period-cond-2").text("Wavea are too frequent");
+            $("#period-cond-2").css("background-color", "#ee9090");
+            beach2 = beach2 + 1;
+          } else {
+            $("#period-cond-2").text("Waves are Optimal");
+            $("#period-cond-2").css("background-color", "#90ee90");
+          }
+
+          $("#beach-temp-2").text(data["Rainbow Beach"][1]);
+          $("#beach-turb-2").text(data["Rainbow Beach"][2]);
+          $("#beach-height-2").text(data["Rainbow Beach"][4]);
+          $("#beach-period-2").text(data["Rainbow Beach"][3]);
+
+          if (beach2 === 0) {
+            $("#beach-2-safety").text(
+              "Beach is safe for you and your family to enjoy"
+            );
+          } else if (beach2 === 1) {
+            $("#beach-2-safety").text(
+              "Beach is kind of safe for you and your family to enjoy"
+            );
+          } else if (beach2 === 2) {
+            $("#beach-2-safety").text(
+              "You may choose to visit the beach at your own descretion"
+            );
+          } else if (beach2 === 3) {
+            $("#beach-2-safety").text("We recommend, not to visit the beach");
+          } else if (beach2 === 4) {
+            $("#beach-2-safety").text("Beach conditions are dangerous");
+          }
+
+          // <!-- --------------------------------Beach 3--------------------------------------------- -->
+
+          var list = data["Montrose Beach"];
+          var beach3 = 0;
+          if (list[1] >= 21) {
+            $("#temp-cond-3").text("Water Teamperature too high");
+            $("#temp-cond-3").css("background-color", "#ee9090");
+            beach3 = beach3 + 1;
+          } else {
+            $("#temp-cond-3").text("Water Teamperature is Optimal");
+            $("#temp-cond-3").css("background-color", "#90ee90");
+          }
+          if (list[2] >= 1.2) {
+            $("#turb-cond-3").text("Water is too dirty");
+            $("#turb-cond-3").css("background-color", "#ee9090");
+            beach3 = beach3 + 1;
+          } else {
+            $("#turb-cond-3").text("Water is clean");
+            $("#turb-cond-3").css("background-color", "#90ee90");
+          }
+          if (list[4] >= 4) {
+            $("#height-cond-3").text("Wave Height too high");
+            $("#height-cond-3").css("background-color", "#ee9090");
+            beach3 = beach3 + 1;
+          } else {
+            $("#height-cond-3").text("Wave Height is Optimal");
+            $("#height-cond-3").css("background-color", "#90ee90");
+          }
+          if (list[3] >= 0.08) {
+            $("#period-cond-3").text("Wavea are too frequent");
+            $("#period-cond-3").css("background-color", "#ee9090");
+            beach3 = beach3 + 1;
+          } else {
+            $("#period-cond-3").text("Waves are Optimal");
+            $("#period-cond-3").css("background-color", "#90ee90");
+          }
+
+          $("#beach-temp-3").text(data["Montrose Beach"][1]);
+          $("#beach-turb-3").text(data["Montrose Beach"][2]);
+          $("#beach-height-3").text(data["Montrose Beach"][4]);
+          $("#beach-period-3").text(data["Montrose Beach"][3]);
+
+          if (beach3 === 0) {
+            $("#beach-3-safety").text(
+              "Beach is safe for you and your family to enjoy"
+            );
+          } else if (beach3 === 1) {
+            $("#beach-3-safety").text(
+              "Beach is kind of safe for you and your family to enjoy"
+            );
+          } else if (beach3 === 2) {
+            $("#beach-3-safety").text(
+              "You may choose to visit the beach at your own descretion"
+            );
+          } else if (beach3 === 3) {
+            $("#beach-3-safety").text("We recommend, not to visit the beach");
+          } else if (beach3 === 4) {
+            $("#beach-3-safety").text("Beach conditions are dangerous");
+          }
+
+          // <!-- --------------------------------Beach 4--------------------------------------------- -->
+
+          var list = data["Ohio Street Beach"];
+          var beach4 = 0;
+          if (list[1] >= 21) {
+            $("#temp-cond-4").text("Water Teamperature too high");
+            $("#temp-cond-4").css("background-color", "#ee9090");
+            beach4 = beach4 + 1;
+          } else {
+            $("#temp-cond-4").text("Water Teamperature is Optimal");
+            $("#temp-cond-4").css("background-color", "#90ee90");
+          }
+          if (list[2] >= 1.2) {
+            $("#turb-cond-4").text("Water is too dirty");
+            $("#turb-cond-4").css("background-color", "#ee9090");
+            beach4 = beach4 + 1;
+          } else {
+            $("#turb-cond-4").text("Water is clean");
+            $("#turb-cond-4").css("background-color", "#90ee90");
+          }
+          if (list[4] >= 4) {
+            $("#height-cond-4").text("Wave Height too high");
+            $("#height-cond-4").css("background-color", "#ee9090");
+            beach4 = beach4 + 1;
+          } else {
+            $("#height-cond-4").text("Wave Height is Optimal");
+            $("#height-cond-4").css("background-color", "#90ee90");
+          }
+          if (list[3] >= 0.08) {
+            $("#period-cond-4").text("Wavea are too frequent");
+            $("#period-cond-4").css("background-color", "#ee9090");
+            beach4 = beach4 + 1;
+          } else {
+            $("#period-cond-4").text("Waves are Optimal");
+            $("#period-cond-4").css("background-color", "#90ee90");
+          }
+
+          $("#beach-temp-4").text(data["Ohio Street Beach"][1]);
+          $("#beach-turb-4").text(data["Ohio Street Beach"][2]);
+          $("#beach-height-4").text(data["Ohio Street Beach"][4]);
+          $("#beach-period-4").text(data["Ohio Street Beach"][3]);
+
+          if (beach4 === 0) {
+            $("#beach-4-safety").text(
+              "Beach is safe for you and your family to enjoy"
+            );
+          } else if (beach4 === 1) {
+            $("#beach-4-safety").text(
+              "Beach is kind of safe for you and your family to enjoy"
+            );
+          } else if (beach4 === 2) {
+            $("#beach-4-safety").text(
+              "You may choose to visit the beach at your own descretion"
+            );
+          } else if (beach4 === 3) {
+            $("#beach-4-safety").text("We recommend, not to visit the beach");
+          } else if (beach4 === 4) {
+            $("#beach-4-safety").text("Beach conditions are dangerous");
+          }
+
+          // <!-- --------------------------------Beach 5--------------------------------------------- -->
+
+          var list = data["63rd Street Beach"];
+          var beach5 = 0;
+          if (list[1] >= 21) {
+            $("#temp-cond-5").text("Water Teamperature too high");
+            $("#temp-cond-5").css("background-color", "#ee9090");
+            beach5 = beach5 + 1;
+          } else {
+            $("#temp-cond-5").text("Water Teamperature is Optimal");
+            $("#temp-cond-5").css("background-color", "#90ee90");
+          }
+          if (list[2] >= 1.2) {
+            $("#turb-cond-5").text("Water is too dirty");
+            $("#turb-cond-5").css("background-color", "#ee9090");
+            beach5 = beach5 + 1;
+          } else {
+            $("#turb-cond-5").text("Water is clean");
+            $("#turb-cond-5").css("background-color", "#90ee90");
+          }
+          if (list[4] >= 4) {
+            $("#height-cond-5").text("Wave Height too high");
+            $("#height-cond-5").css("background-color", "#ee9090");
+            beach5 = beach5 + 1;
+          } else {
+            $("#height-cond-5").text("Wave Height is Optimal");
+            $("#height-cond-5").css("background-color", "#90ee90");
+          }
+          if (list[3] >= 0.08) {
+            $("#period-cond-5").text("Wavea are too frequent");
+            $("#period-cond-5").css("background-color", "#ee9090");
+            beach5 = beach5 + 1;
+          } else {
+            $("#period-cond-5").text("Waves are Optimal");
+            $("#period-cond-5").css("background-color", "#90ee90");
+          }
+
+          $("#beach-temp-5").text(data["63rd Street Beach"][1]);
+          $("#beach-turb-5").text(data["63rd Street Beach"][2]);
+          $("#beach-height-5").text(data["63rd Street Beach"][4]);
+          $("#beach-period-5").text(data["63rd Street Beach"][3]);
+
+          if (beach5 === 0) {
+            $("#beach-5-safety").text(
+              "Beach is safe for you and your family to enjoy"
+            );
+          } else if (beach5 === 1) {
+            $("#beach-5-safety").text(
+              "Beach is kind of safe for you and your family to enjoy"
+            );
+          } else if (beach5 === 2) {
+            $("#beach-5-safety").text(
+              "You may choose to visit the beach at your own descretion"
+            );
+          } else if (beach5 === 3) {
+            $("#beach-5-safety").text("We recommend, not to visit the beach");
+          } else if (beach5 === 4) {
+            $("#beach-5-safety").text("Beach conditions are dangerous");
+          }
+
+          // <!-- --------------------------------Beach 6--------------------------------------------- -->
+
+          var list = data["Osterman Beach"];
+          var beach6 = 0;
+          if (list[1] >= 21) {
+            $("#temp-cond-6").text("Water Teamperature too high");
+            $("#temp-cond-6").css("background-color", "#ee9090");
+            beach6 = beach6 + 1;
+          } else {
+            $("#temp-cond-6").text("Water Teamperature is Optimal");
+            $("#temp-cond-6").css("background-color", "#90ee90");
+          }
+          if (list[2] >= 1.2) {
+            $("#turb-cond-6").text("Water is too dirty");
+            $("#turb-cond-6").css("background-color", "#ee9090");
+            beach6 = beach6 + 1;
+          } else {
+            $("#turb-cond-6").text("Water is clean");
+            $("#turb-cond-6").css("background-color", "#90ee90");
+          }
+          if (list[4] >= 4) {
+            $("#height-cond-6").text("Wave Height too high");
+            $("#height-cond-6").css("background-color", "#ee9090");
+            beach6 = beach6 + 1;
+          } else {
+            $("#height-cond-6").text("Wave Height is Optimal");
+            $("#height-cond-6").css("background-color", "#90ee90");
+          }
+          if (list[3] >= 0.08) {
+            $("#period-cond-6").text("Wavea are too frequent");
+            $("#period-cond-6").css("background-color", "#ee9090");
+            beach6 = beach6 + 1;
+          } else {
+            $("#period-cond-6").text("Waves are Optimal");
+            $("#period-cond-6").css("background-color", "#90ee90");
+          }
+
+          $("#beach-temp-6").text(data["Osterman Beach"][1]);
+          $("#beach-turb-6").text(data["Osterman Beach"][2]);
+          $("#beach-height-6").text(data["Osterman Beach"][4]);
+          $("#beach-period-6").text(data["Osterman Beach"][3]);
+
+          if (beach6 === 0) {
+            $("#beach-6-safety").text(
+              "Beach is safe for you and your family to enjoy"
+            );
+          } else if (beach6 === 1) {
+            $("#beach-6-safety").text(
+              "Beach is kind of safe for you and your family to enjoy"
+            );
+          } else if (beach6 === 2) {
+            $("#beach-6-safety").text(
+              "You may choose to visit the beach at your own descretion"
+            );
+          } else if (beach6 === 3) {
+            $("#beach-6-safety").text("We recommend, not to visit the beach");
+          } else if (beach6 === 4) {
+            $("#beach-6-safety").text("Beach conditions are dangerous");
+          }
+        });
+      }, 2000);
+    </script>
+  </body>
 </html>
