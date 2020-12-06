@@ -35,5 +35,9 @@ def getData():
     file1.close()
     return final
 
+@app.route('/safety')
+def safety():
+    return render_template('safety.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

@@ -17,30 +17,35 @@ def on_message(c , u, msg):
   print(data)
 
   beachname = data['BeachName']
-  temperature = data['WaterTemperature']
-  turbidity=data['Turbidity']
-  waveperiod=data['WavePeriod']
-  waveheight=data['WaveHeight']
-  
-  file2 = open("data.txt","r")
-  x = file2.readlines()
-  file2.close()
-  file3 = open("data.txt","a")
-  for i in range(len(x)):
-      z=x[i].split(',')
-      print(z[0]== str(beachname))
-      if(z[0] == str(beachname)):
-        del x[i]
-        break
-  open('data.txt', 'w').close()      
-  for line in x:
-    file3.write(line)     
-        
-  file3.close()
-  file2.close()
-  file1 = open("data.txt","a")
-
-  file1.write(str(beachname)+','+str(temperature)+','+str(turbidity)+','+str(waveperiod)+','+str(waveheight)+'\n')
+  temperature = round(float(data['WaterTemperature']),3)
+  turbidity=round(float(data['Turbidity']),3)
+  waveperiod=round(float(data['WavePeriod']),3)
+  waveheight=round(float(data['WaveHeight']),3)
+  if(float(temperature) > 0 and float(turbidity) > 0 and float(waveheight) >0 and float(waveperiod) >0):
+    file2 = open("data.txt","r")
+    x = file2.readlines()
+    file2.close()
+    file3 = open("data.txt","a")
+    for i in range(len(x)):
+        z=x[i].split(',')
+        print(z[0]== str(beachname))
+        if(z[0] == str(beachname)):
+          del x[i]
+          break
+    open('data.txt', 'w').close()      
+    for line in x:
+      file3.write(line)     
+          
+    file3.close()
+    file2.close()
+    
+    
+    
+    file1 = open("data.txt","a")
+      
+    file1.write(str(beachname)+','+str(temperature)+','+str(turbidity)+','+str(waveperiod)+','+str(waveheight)+'\n')
+  else:
+    return
   
 mqtt = mqtt.Client()
 mqtt.tls_set(CA, CERTI, KEYFILE, cert_reqs = ssl.CERT_REQUIRED, tls_version=ssl.PROTOCOL_TLSv1_2, ciphers = None)

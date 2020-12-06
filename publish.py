@@ -43,7 +43,7 @@ def main():
             )
             print(dataToBeSent)
             mqtt.publish("waves22",dataToBeSent)
-            sleep(5)
+            sleep(1)
         except:
             print('Exiting...')
             break
