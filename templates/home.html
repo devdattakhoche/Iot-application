@@ -325,7 +325,8 @@
           // <!-- --------------------------------Beach 1--------------------------------------------- -->
           var list = data["Calumet Beach"];
           var beach1 = 0;
-          if (list[1] >= 21) {
+          var flag = false;
+          if (list[1] >= 30) {
             $("#temp-cond-1").text("Water Teamperature too high");
             $("#temp-cond-1").css("background-color", "#ee9090");
             beach1 = beach1 + 1;
@@ -333,7 +334,7 @@
             $("#temp-cond-1").text("Water Teamperature is Optimal");
             $("#temp-cond-1").css("background-color", "#90ee90");
           }
-          if (list[2] >= 1.2) {
+          if (list[2] >= 3) {
             $("#turb-cond-1").text("Water is too dirty");
             $("#turb-cond-1").css("background-color", "#ee9090");
             beach1 = beach1 + 1;
@@ -341,18 +342,20 @@
             $("#turb-cond-1").text("Water is clean");
             $("#turb-cond-1").css("background-color", "#90ee90");
           }
-          if (list[4] >= 4) {
+          if (list[4] >= 1) {
             $("#height-cond-1").text("Wave Height too high");
             $("#height-cond-1").css("background-color", "#ee9090");
             beach1 = beach1 + 1;
+            flag = true;
           } else {
             $("#height-cond-1").text("Wave Height is Optimal");
             $("#height-cond-1").css("background-color", "#90ee90");
           }
-          if (list[3] >= 0.08) {
+          if (list[3] >= 4.00) {
             $("#period-cond-1").text("Waves are too frequent");
             $("#period-cond-1").css("background-color", "#ee9090");
             beach1 = beach1 + 1;
+            flag = true;
           } else {
             $("#period-cond-1").text("Waves are Optimal");
             $("#period-cond-1").css("background-color", "#90ee90");
@@ -363,7 +366,12 @@
           $("#beach-height-1").text(data["Calumet Beach"][4]);
           $("#beach-period-1").text(data["Calumet Beach"][3]);
 
-          if (beach1 === 0) {
+          if (flag) {
+            $("#beach-1-safety").text(
+              "Beach Conditions are not safe"
+            ); 
+          }
+          else if (beach1 === 0) {
             $("#beach-1-safety").text(
               "Beach is safe for you and your family to enjoy"
             );
@@ -385,7 +393,8 @@
 
           var list = data["Rainbow Beach"];
           var beach2 = 0;
-          if (list[1] >= 21) {
+          var flag2 = false;
+          if (list[1] >= 30) {
             $("#temp-cond-2").text("Water Teamperature too high");
             $("#temp-cond-2").css("background-color", "#ee9090");
             beach2 = beach2 + 1;
@@ -393,7 +402,7 @@
             $("#temp-cond-2").text("Water Teamperature is Optimal");
             $("#temp-cond-2").css("background-color", "#90ee90");
           }
-          if (list[2] >= 1.2) {
+          if (list[2] >= 3) {
             $("#turb-cond-2").text("Water is too dirty");
             $("#turb-cond-2").css("background-color", "#ee9090");
             beach2 = beach2 + 1;
@@ -401,18 +410,20 @@
             $("#turb-cond-2").text("Water is clean");
             $("#turb-cond-2").css("background-color", "#90ee90");
           }
-          if (list[4] >= 4) {
+          if (list[4] >= 1) {
             $("#height-cond-2").text("Wave Height too high");
             $("#height-cond-2").css("background-color", "#ee9090");
             beach2 = beach2 + 1;
+            flag2=true;
           } else {
             $("#height-cond-2").text("Wave Height is Optimal");
             $("#height-cond-2").css("background-color", "#90ee90");
           }
-          if (list[3] >= 0.08) {
+          if (list[3] >= 4.00) {
             $("#period-cond-2").text("Wavea are too frequent");
             $("#period-cond-2").css("background-color", "#ee9090");
             beach2 = beach2 + 1;
+            flag2=true;
           } else {
             $("#period-cond-2").text("Waves are Optimal");
             $("#period-cond-2").css("background-color", "#90ee90");
@@ -423,7 +434,12 @@
           $("#beach-height-2").text(data["Rainbow Beach"][4]);
           $("#beach-period-2").text(data["Rainbow Beach"][3]);
 
-          if (beach2 === 0) {
+          if (flag2) {
+            $("#beach-2-safety").text(
+              "Beach Conditions are not safe"
+            ); 
+          }
+          else if (beach2 === 0) {
             $("#beach-2-safety").text(
               "Beach is safe for you and your family to enjoy"
             );
@@ -445,7 +461,8 @@
 
           var list = data["Montrose Beach"];
           var beach3 = 0;
-          if (list[1] >= 21) {
+          var flag3 = false;
+          if (list[1] >= 30) {
             $("#temp-cond-3").text("Water Teamperature too high");
             $("#temp-cond-3").css("background-color", "#ee9090");
             beach3 = beach3 + 1;
@@ -453,7 +470,7 @@
             $("#temp-cond-3").text("Water Teamperature is Optimal");
             $("#temp-cond-3").css("background-color", "#90ee90");
           }
-          if (list[2] >= 1.2) {
+          if (list[2] >= 3) {
             $("#turb-cond-3").text("Water is too dirty");
             $("#turb-cond-3").css("background-color", "#ee9090");
             beach3 = beach3 + 1;
@@ -461,18 +478,20 @@
             $("#turb-cond-3").text("Water is clean");
             $("#turb-cond-3").css("background-color", "#90ee90");
           }
-          if (list[4] >= 4) {
+          if (list[4] >= 1) {
             $("#height-cond-3").text("Wave Height too high");
             $("#height-cond-3").css("background-color", "#ee9090");
             beach3 = beach3 + 1;
+            flag3 = true;
           } else {
             $("#height-cond-3").text("Wave Height is Optimal");
             $("#height-cond-3").css("background-color", "#90ee90");
           }
-          if (list[3] >= 0.08) {
+          if (list[3] >= 4.00) {
             $("#period-cond-3").text("Wavea are too frequent");
             $("#period-cond-3").css("background-color", "#ee9090");
             beach3 = beach3 + 1;
+            flag3 = true;
           } else {
             $("#period-cond-3").text("Waves are Optimal");
             $("#period-cond-3").css("background-color", "#90ee90");
@@ -483,7 +502,12 @@
           $("#beach-height-3").text(data["Montrose Beach"][4]);
           $("#beach-period-3").text(data["Montrose Beach"][3]);
 
-          if (beach3 === 0) {
+          if (flag3) {
+            $("#beach-3-safety").text(
+              "Beach Conditions are not safe"
+            ); 
+          }
+          else if (beach3 === 0) {
             $("#beach-3-safety").text(
               "Beach is safe for you and your family to enjoy"
             );
@@ -505,7 +529,8 @@
 
           var list = data["Ohio Street Beach"];
           var beach4 = 0;
-          if (list[1] >= 21) {
+          var flag4 = false;
+          if (list[1] >= 30) {
             $("#temp-cond-4").text("Water Teamperature too high");
             $("#temp-cond-4").css("background-color", "#ee9090");
             beach4 = beach4 + 1;
@@ -513,7 +538,7 @@
             $("#temp-cond-4").text("Water Teamperature is Optimal");
             $("#temp-cond-4").css("background-color", "#90ee90");
           }
-          if (list[2] >= 1.2) {
+          if (list[2] >= 3) {
             $("#turb-cond-4").text("Water is too dirty");
             $("#turb-cond-4").css("background-color", "#ee9090");
             beach4 = beach4 + 1;
@@ -521,18 +546,20 @@
             $("#turb-cond-4").text("Water is clean");
             $("#turb-cond-4").css("background-color", "#90ee90");
           }
-          if (list[4] >= 4) {
+          if (list[4] >= 1) {
             $("#height-cond-4").text("Wave Height too high");
             $("#height-cond-4").css("background-color", "#ee9090");
             beach4 = beach4 + 1;
+            flag4 = true;
           } else {
             $("#height-cond-4").text("Wave Height is Optimal");
             $("#height-cond-4").css("background-color", "#90ee90");
           }
-          if (list[3] >= 0.08) {
+          if (list[3] >= 4.00) {
             $("#period-cond-4").text("Wavea are too frequent");
             $("#period-cond-4").css("background-color", "#ee9090");
             beach4 = beach4 + 1;
+            flag4 = true;
           } else {
             $("#period-cond-4").text("Waves are Optimal");
             $("#period-cond-4").css("background-color", "#90ee90");
@@ -543,7 +570,12 @@
           $("#beach-height-4").text(data["Ohio Street Beach"][4]);
           $("#beach-period-4").text(data["Ohio Street Beach"][3]);
 
-          if (beach4 === 0) {
+          if (flag4) {
+            $("#beach-4-safety").text(
+              "Beach Conditions are not safe"
+            ); 
+          }
+          else if (beach4 === 0) {
             $("#beach-4-safety").text(
               "Beach is safe for you and your family to enjoy"
             );
@@ -565,7 +597,8 @@
 
           var list = data["63rd Street Beach"];
           var beach5 = 0;
-          if (list[1] >= 21) {
+          var flag5 = false;
+          if (list[1] >= 30) {
             $("#temp-cond-5").text("Water Teamperature too high");
             $("#temp-cond-5").css("background-color", "#ee9090");
             beach5 = beach5 + 1;
@@ -573,7 +606,7 @@
             $("#temp-cond-5").text("Water Teamperature is Optimal");
             $("#temp-cond-5").css("background-color", "#90ee90");
           }
-          if (list[2] >= 1.2) {
+          if (list[2] >= 3) {
             $("#turb-cond-5").text("Water is too dirty");
             $("#turb-cond-5").css("background-color", "#ee9090");
             beach5 = beach5 + 1;
@@ -581,18 +614,20 @@
             $("#turb-cond-5").text("Water is clean");
             $("#turb-cond-5").css("background-color", "#90ee90");
           }
-          if (list[4] >= 4) {
+          if (list[4] >= 1) {
             $("#height-cond-5").text("Wave Height too high");
             $("#height-cond-5").css("background-color", "#ee9090");
+            flag5 = true;
             beach5 = beach5 + 1;
           } else {
             $("#height-cond-5").text("Wave Height is Optimal");
             $("#height-cond-5").css("background-color", "#90ee90");
           }
-          if (list[3] >= 0.08) {
+          if (list[3] >= 4.00) {
             $("#period-cond-5").text("Wavea are too frequent");
             $("#period-cond-5").css("background-color", "#ee9090");
             beach5 = beach5 + 1;
+            flag5 = true;
           } else {
             $("#period-cond-5").text("Waves are Optimal");
             $("#period-cond-5").css("background-color", "#90ee90");
@@ -603,7 +638,12 @@
           $("#beach-height-5").text(data["63rd Street Beach"][4]);
           $("#beach-period-5").text(data["63rd Street Beach"][3]);
 
-          if (beach5 === 0) {
+          if (flag5) {
+            $("#beach-5-safety").text(
+              "Beach Conditions are not safe"
+            ); 
+          }
+          else if (beach5 === 0) {
             $("#beach-5-safety").text(
               "Beach is safe for you and your family to enjoy"
             );
@@ -625,7 +665,8 @@
 
           var list = data["Osterman Beach"];
           var beach6 = 0;
-          if (list[1] >= 21) {
+          var flag6 = false;
+          if (list[1] >= 30) {
             $("#temp-cond-6").text("Water Teamperature too high");
             $("#temp-cond-6").css("background-color", "#ee9090");
             beach6 = beach6 + 1;
@@ -633,7 +674,7 @@
             $("#temp-cond-6").text("Water Teamperature is Optimal");
             $("#temp-cond-6").css("background-color", "#90ee90");
           }
-          if (list[2] >= 1.2) {
+          if (list[2] >= 3) {
             $("#turb-cond-6").text("Water is too dirty");
             $("#turb-cond-6").css("background-color", "#ee9090");
             beach6 = beach6 + 1;
@@ -641,18 +682,20 @@
             $("#turb-cond-6").text("Water is clean");
             $("#turb-cond-6").css("background-color", "#90ee90");
           }
-          if (list[4] >= 4) {
+          if (list[4] >= 1) {
             $("#height-cond-6").text("Wave Height too high");
             $("#height-cond-6").css("background-color", "#ee9090");
             beach6 = beach6 + 1;
+            flag6 = true;
           } else {
             $("#height-cond-6").text("Wave Height is Optimal");
             $("#height-cond-6").css("background-color", "#90ee90");
           }
-          if (list[3] >= 0.08) {
+          if (list[3] >= 4.00) {
             $("#period-cond-6").text("Wavea are too frequent");
             $("#period-cond-6").css("background-color", "#ee9090");
             beach6 = beach6 + 1;
+            flag6 = true;
           } else {
             $("#period-cond-6").text("Waves are Optimal");
             $("#period-cond-6").css("background-color", "#90ee90");
@@ -663,7 +706,12 @@
           $("#beach-height-6").text(data["Osterman Beach"][4]);
           $("#beach-period-6").text(data["Osterman Beach"][3]);
 
-          if (beach6 === 0) {
+          if (flag6) {
+            $("#beach-6-safety").text(
+              "Beach Conditions are not safe"
+            ); 
+          }
+          else if (beach6 === 0) {
             $("#beach-6-safety").text(
               "Beach is safe for you and your family to enjoy"
             );
